@@ -1,6 +1,7 @@
 
 import './App.css'
 import { CounterView } from './components/CounterView'
+import PostView from './components/PostView'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
        <h1>Redux-ToolKit</h1>
        <CounterView/>
+       <PostView/>
     </>
   )
 }
