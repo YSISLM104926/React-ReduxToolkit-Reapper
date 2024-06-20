@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increment, reset } from '../features/counterSlice'
+import { decrement, fiveIncrement, increment, reset } from '../features/counterSlice'
 
 export const CounterView = () => {
     const count = useSelector(state => state.counterRe.count)
@@ -12,6 +12,7 @@ export const CounterView = () => {
               <button onClick={()=>dispatch(increment())} className='btn btn-primary'>increment</button>
               <button onClick={()=>dispatch(decrement())} className='btn btn-primary'>decrement</button>
               <button onClick={()=>dispatch(reset())} className='btn btn-primary'>reset</button>
+              <button onClick={()=>dispatch(fiveIncrement(5))} className='btn btn-primary'>5+</button>
         </div>
     )
 }
